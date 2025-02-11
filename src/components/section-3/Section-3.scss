@@ -1,0 +1,36 @@
+.card-section-3{
+    list-style: none;
+    padding: 0;
+    .popular-iteam-image{
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        text-align: center;
+    }
+    .food-name{
+        color: rgba(66, 66, 66, 1);
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .location {
+        align-items: center;
+        img{
+            height: 18px;
+            padding-right: 2px;
+
+        }
+    }
+    .shop-name{
+        color: rgba(255, 174, 0, 1);
+              font-weight: 400;
+    }
+    .price{
+        color: rgba(33, 33, 33, 1);
+        font-weight: bold;
+    }
+
+    .order-btn{
+        font-weight: 200;
+    }
+   
+}

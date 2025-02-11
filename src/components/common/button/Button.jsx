@@ -1,7 +1,7 @@
 import React from 'react'
 import './Button.scss'
 
-const Button = ({name,children}) => {
+const Button = ({name}) => {
   return (
     <div>
       <button>{name? name:"Click Me"}</button>

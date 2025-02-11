@@ -3,6 +3,7 @@ import handBag from "../../asset/picup-Icon.png"
 import serchIcon from "../../asset/banner-search-icon.png"
 import bannerImage from "../../asset/meat-1155132.jpg"
 import mapIcon from "../../asset/map-icon.png"
+import deliveryIcon from "../../asset/delivery-bike-Icon.png"
 import './Banner.scss'
 import { Col,Row, Container } from 'react-bootstrap'
 
@@ -19,7 +20,10 @@ const Banner = () => {
           <div className='picup-find-food'>
 
                 <ul  className='picup flex-row'>
-                   <input type="text" name="" id="" />
+                   <li className='delivery'>
+                    <img src={deliveryIcon} alt="" />
+                    Delivery
+                   </li>
                    <li className='hand-bag-box'><img src={handBag} alt="" /> Picup</li>
                    </ul>
 

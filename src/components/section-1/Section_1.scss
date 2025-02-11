@@ -1,0 +1,53 @@
+.section-1-card{
+    list-style: none;
+    padding: 0;
+    .img-box{
+        position: relative;
+        .price-box{
+            position: absolute;
+            bottom: 0;
+            padding-right: 25px;
+            background-color: rgba(255, 179, 14, 1);
+            color: #fff;
+            border-top-right-radius: 35px;
+            border-bottom-left-radius: 24px;
+            display: flex;
+            flex-direction: row;
+            .price{
+               font-size: 50px;
+               font-weight: 700;
+            }
+            .one{
+                display: flex;
+                flex-direction: column;
+
+                .price-2{
+                    font-size: 38px;
+                }
+            }
+
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 300px;
+            border-radius: 10px;
+            border-bottom-left-radius: 25px;
+        }
+    }
+
+    .category{
+        color: rgba(66, 66, 66, 1);
+        font-weight: 700;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+    .remain{
+        width: 10em;
+        color: rgb(252, 95, 5);
+        font-weight: 700;
+        padding: 3px 5px;
+        background-color: rgba(252, 96, 5, 0.419);
+        border-radius: 5px;
+    }
+}

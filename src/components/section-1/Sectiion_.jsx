@@ -6,14 +6,10 @@ const Sectiion_1 = () => {
   return (
     <Container className='mt-5'>
       <Row>
-       
           <Card_Section_1/> 
           <Card_Section_1/> 
           <Card_Section_1/> 
           <Card_Section_1/> 
-          
-          
-     
       </Row>
     </Container>
   )

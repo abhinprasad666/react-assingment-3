@@ -1,0 +1,126 @@
+.banner{
+    background-color:  rgba(255, 179, 14, 1);
+    width: 100%;
+    height: fit-content;
+    
+  
+}
+
+//banner left section
+.banner-left-section{
+  margin-top: 82px;
+
+h1{
+ 
+    height:88px ;
+    color: white;
+    font-weight: bold;
+}
+p{
+    height:26px ;
+    color: rgba(80, 79, 79, 1);
+    font-weight: 500;
+   
+}
+.picup-find-food{
+border-radius: 10px;
+height: 194px;
+background-color: rgb(235, 235, 235);
+
+.picup{
+    input{
+        width: 148px;
+        border: none;
+        border-radius: 8px;
+        margin: 10px 18px;
+        
+    }
+    .hand-bag-box{
+        padding:10px 24px ;
+        list-style: none;
+        img{
+            height: 18px;
+        }
+    }
+}
+.find-food{
+    span{
+        
+        img{
+            height: 18px;
+            position: relative;
+            left: 35px;
+         
+        }
+    }
+   input{
+        height: 49px;
+        border: none;
+        border-radius: 8px;
+        margin: 24px 0;
+         padding-left: 40px;
+
+    }
+    button{
+        border: none;
+        border-radius: 8px;
+        background-color:#F65900 ;
+        padding: 10px;
+        margin-left: 10px;
+
+    }
+}
+}
+
+}
+
+
+//banner right section
+.banner-right-section{
+    display: flex;
+    flex-direction: row;
+    justify-self: end;
+    margin: 82px 0;
+}
+
+
+.hero-image
+{  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img{
+        width: 100%;
+        border-radius: 5%;
+        object-fit: cover;
+}
+}
+
+@media (max-width: 768px) {
+  .banner-left-section {
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        max-width: 100%;
+        margin: 40px 0;
+    }
+     .picup-find-food{
+        ul{
+            margin-bottom: 0;
+            input{
+                width: 80%;
+            }
+            .picup-btn{
+             position: relative;
+             width: 81%;
+             
+            }
+        }
+        
+     }
+  }
+
+
+}

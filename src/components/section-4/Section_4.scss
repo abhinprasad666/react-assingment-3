@@ -2,6 +2,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+
 img{
     border-radius: 10px;
 }
@@ -68,4 +69,12 @@ img{
     justify-content: center;
     align-items: center;
    
+}
+.featured-title{
+    justify-content: center;
+    
+    h1{
+        color: rgba(33, 33, 33, 1);
+        font-weight: 700;
+    }
 }

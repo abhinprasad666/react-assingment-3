@@ -10,7 +10,7 @@ import './Section_4.scss'
 
 const Card_Section_4 = () => {
   return (
-   <Col  sm={6} md={4}  lg={3} xl={3} xxl={3}>
+   <Col  sm={6} md={4}  lg={3} xl={3} xxl={3} className='mb-5'>
       <ul className='section-4'>
         <div className='img-box '>
           <img className=' w-100' src="https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Korean-Fried-Chicken-square-FS-New-7377.jpg" alt="" />
@@ -34,7 +34,8 @@ const Card_Section_4 = () => {
             <li className='rating'><img src={starIcon} alt="" /> 20</li>
           </span>
         </div>
-        <Button className='order-now pt-4 ' status={"close"} name={"Opens tomorrow"}/>
+        <Button className='order-now ' status={"close"} name={"Opens tomorrow"} />
+    
       </ul>
    </Col>
   )

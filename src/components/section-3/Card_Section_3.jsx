@@ -16,7 +16,7 @@ const Card_Section_3 = () => {
             </div>
            
             <li className='price'>$3.88</li>
-            <Button className='order-btn' name={"Order Now"}/>
+            <Button className='order-btn' name={"Order Now"} />
         </ul>
     </Col>
   )

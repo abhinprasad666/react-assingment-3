@@ -1,10 +1,13 @@
 import React from 'react'
 import './Button.scss'
 
-const Button = ({name}) => {
+const Button = ({name,status,children}) => {
   return (
     <div>
-      <button>{name? name:"Click Me"}</button>
+      <button className={status }>
+        
+        {name? name:"Click Me"} {children} </button>
+     
     </div>
   )
 }

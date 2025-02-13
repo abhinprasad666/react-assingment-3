@@ -1,11 +1,11 @@
 import React from 'react'
-import handBag from "../../asset/picup-Icon.png"
-import serchIcon from "../../asset/banner-search-icon.png"
-import bannerImage from "../../asset/meat-1155132.jpg"
-import mapIcon from "../../asset/map-icon.png"
-import deliveryIcon from "../../asset/delivery-bike-Icon.png"
-import './Banner.scss'
+import handBag from "../../../asset/picup-Icon.png"
+import serchIcon from "../../../asset/banner-search-icon.png"
+import bannerImage from "../../../asset/meat-1155132.jpg"
+import mapIcon from "../../../asset/map-icon.png"
+import deliveryIcon from "../../../asset/delivery-bike-Icon.png"
 import { Col,Row, Container } from 'react-bootstrap'
+import './Banner.scss'
 
 const Banner = () => {
   return (

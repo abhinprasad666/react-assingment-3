@@ -1,8 +1,8 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Card_Section_4 from './Card_Section_4.JSX'
-import Button from '../common/button/Button'
-import arrowIcon from '../../asset/arrow-Icon.png'
+import Button from '../../common/button/Button'
+import arrowIcon from '../../../asset/arrow-Icon.png'
 import './Section_4.scss'
 
 const Section_4 = () => {

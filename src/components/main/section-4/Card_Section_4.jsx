@@ -1,11 +1,10 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import Button from '../common/button/Button'
-import tagIcon from '../../asset/tag-Icon.png'
-import clockIcon from '../../asset/time-Icon.png'
-import starIcon from '../../asset/star-Icon.png'
-import brand1 from '../../asset/brand-Image-1.png'
-
+import Button from '../../common/button/Button'
+import tagIcon from '../../../asset/tag-Icon.png'
+import clockIcon from '../../../asset/time-Icon.png'
+import starIcon from '../../../asset/star-Icon.png'
+import brand1 from '../../../asset/brand-Image-1.png'
 import './Section_4.scss'
 
 const Card_Section_4 = () => {

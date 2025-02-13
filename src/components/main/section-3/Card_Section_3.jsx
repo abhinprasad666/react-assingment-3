@@ -1,8 +1,8 @@
 import React from 'react'
-import './Section-3.scss'
 import { Col } from 'react-bootstrap'
-import Button from '../common/button/Button'
-import mapIcon from '../../asset/map-icon.png'
+import Button from '../../common/button/Button'
+import mapIcon from '../../../asset/map-icon.png'
+import './Section-3.scss'
 
 const Card_Section_3 = () => {
   return (

@@ -1,8 +1,8 @@
 
-import logo from '../../asset/Logo.png'
-import mapIcon from '../../asset/map-icon.png'
-import searchIcon from '../../asset/Search-icon.png'
-import user from '../../asset/user-icon.png'
+import logo from '../../../asset/Logo.png'
+import mapIcon from '../../../asset/map-icon.png'
+import searchIcon from '../../../asset/Search-icon.png'
+import user from '../../../asset/user-icon.png'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';

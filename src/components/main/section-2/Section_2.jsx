@@ -1,8 +1,8 @@
 import React from 'react'
-import mapIcon from '../../asset/section-2-map-Icon.png'
-import icon2 from '../../asset/section-2-Icons-2.png'
-import icon3 from '../../asset/section-2-Icon-3.png'
-import icon4 from '../../asset/section-2-Icon-4.png'
+import mapIcon from '../../../asset/map-icon.png'
+import icon2 from '../../../asset/section-2-Icons-2.png'
+import icon3 from '../../../asset/section-2-Icon-3.png'
+import icon4 from '../../../asset/section-2-Icon-4.png'
 import { Col, Container, Row } from 'react-bootstrap'
 import './Section_2.scss'
 const Section_2 = () => {

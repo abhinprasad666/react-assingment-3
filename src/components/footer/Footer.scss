@@ -1,0 +1,100 @@
+.footer{
+    background-color: rgba(33, 33, 33, 1);
+    color:rgba(245, 245, 245, 1);
+    font-size: 18px;
+    font-weight: lighter;
+    padding:  5em;
+
+    .city-heading{
+           
+        li{
+            list-style: none;
+            color:#fff;
+            font-size: 26px;
+            font-weight: 400;
+            position: relative;
+            bottom: 1em;
+        }
+    }
+    .box-1{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: solid rgba(66, 66, 66, 1) 1px;
+        padding-bottom: 5em;
+    }
+
+    .box-2{
+        @extend .box-1;
+
+           gap: 5em;
+
+           .company,.contact,.legal{
+            font-size: 18px;
+            color: #fff;
+            font-weight: 400;
+            padding-bottom: 1em;
+           }
+        
+        .container-2{
+             
+            .follow-us{
+                padding-bottom: 1em;
+                color: rgba(230, 227, 227, 0.925);
+                font-size: 18px;
+                font-weight: 400;
+            }
+            .social-media{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+               img{
+                height: 20px;
+                
+               }
+            }
+            .mailbox-description{
+                @extend .follow-us
+            }
+           .envelop-box{
+            display: flex;
+
+            .envelop{
+                background-color: rgba(173, 173, 173, 0.095);
+                 padding: 2px 5px;
+                 border-radius: 5px;
+                 display: flex;
+                 align-items: center;
+                 margin-right: 4px;
+           
+                img{
+                    height: 18px;
+                }
+                input{
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    color: #fff;
+                }
+            }
+           }
+        }
+    }
+    .box-3{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        gap: 1em;
+       .your-company{
+        color: #fff;
+        font-weight: 400;
+      
+       }
+
+       .themewagon{
+        @extend .your-company
+       }
+    }
+}

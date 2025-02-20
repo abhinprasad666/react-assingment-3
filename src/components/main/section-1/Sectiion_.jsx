@@ -1,15 +1,34 @@
-import React from 'react'
 import Card_Section_1 from './Card_Section_1'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
+import { AllDishes } from '../../Context/AllDishesContext'
+import { useContext } from 'react'
+
 
 const Sectiion_1 = () => {
+
+  const allDishes=useContext(AllDishes)
+
+  const maxDish=8
+
+  const allFooos=allDishes?.map((res,length)=>{
+
+    if(length<maxDish){
+          //create randum number
+let randomNumber = Math.floor((Math.random() * 10) + 1);
+    if(randomNumber===10){
+      randomNumber=5
+    }
+      return(
+        <Card_Section_1 key={res.idMeal} image={res.strMealThumb} name={res.strMeal} randomNumber={randomNumber}/>
+      )
+    }
+
+  })
+
   return (
     <Container className='mt-5'>
       <Row>
-          <Card_Section_1/> 
-          <Card_Section_1/> 
-          <Card_Section_1/> 
-          <Card_Section_1/> 
+     {allFooos}
       </Row>
     </Container>
   )

@@ -1,13 +1,12 @@
 import React from 'react'
 import handBag from "../../../asset/picup-Icon.png"
 import serchIcon from "../../../asset/banner-search-icon.png"
-import bannerImage from "../../../asset/meat-1155132.jpg"
 import mapIcon from "../../../asset/map-icon.png"
 import deliveryIcon from "../../../asset/delivery-bike-Icon.png"
 import { Col,Row, Container } from 'react-bootstrap'
 import './Banner.scss'
 
-const Banner = () => {
+const Banner = (props) => {
   return (
     <div className='banner'>
       <Container className='fluid'>
@@ -43,7 +42,7 @@ const Banner = () => {
           <Col xl={5}  xs={12} className='banner-col '>
           <div className="banner-right-section">
            <div className='hero-image'>
-            <img  src={bannerImage} alt="" />
+            <img  src={props.image?props.image:"Loding"} alt="" />
            </div>
            </div>
           </Col>

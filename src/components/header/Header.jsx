@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import Navigationbar from './navbar/Navigationbar'
-import Banner from './banner/Banner'
+import Banner from '../main/banner/Banner'
 import { AllDishes, Loding } from '../Context/AllDishesContext'
 
 

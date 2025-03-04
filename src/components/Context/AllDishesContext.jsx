@@ -1,5 +1,7 @@
 import axios from 'axios'
 import React, { createContext, useEffect, useState } from 'react'
+import LodingPage from '../Loding/LodingPage'
+
 
 
 
@@ -37,7 +39,7 @@ const getAllProduct=()=>{
     <div>
       <AllDishes.Provider value={allDishes}>
         <Loding.Provider value={loding}>
-            {loding==false ?children :<h1>Loding...</h1>}
+            {loding==false ?children :<LodingPage/>}
          </Loding.Provider>
       </AllDishes.Provider>
     </div>

@@ -5,11 +5,22 @@ import mapIcon from "../../../asset/map-icon.png"
 import deliveryIcon from "../../../asset/delivery-bike-Icon.png"
 import { Col,Row, Container } from 'react-bootstrap'
 import './Banner.scss'
+import { Link } from 'react-router'
 
 const Banner = (props) => {
   return (
     <div className='banner'>
       <Container className='fluid'>
+        {/* <Row>
+          <Col>
+          <div className='special-dishes' >
+
+        <Link to={'/specialdishes'}><img src={serchIcon} alt="" />Special Dishes</Link>  
+            <p>Go to special ishes</p>
+            </div>
+            
+        </Col>
+        </Row> */}
         <Row>
           <Col  xl={7}  xs={12}>
           <div className='banner-left-section '>

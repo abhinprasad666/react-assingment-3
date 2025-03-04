@@ -26,7 +26,7 @@ let randomNumber = Math.floor((Math.random() * 10) + 1);
   })
 
   return (
-    <Container className='mt-5'>
+    <Container className='my-5'>
       <Row>
      {allFooos}
       </Row>

@@ -1,4 +1,3 @@
-import React, { useContext } from 'react'
 import Footer from './components/footer/Footer'
 import Main from './components/main/Main'
 import AllDishesContext from './components/Context/AllDishesContext'
@@ -6,6 +5,7 @@ import { createBrowserRouter, Route, RouterProvider } from 'react-router'
 import { createRoutesFromElements } from 'react-router'
 import RootLayout from './components/layout/RootLayout'
 import Categories from './pages/categories/Categories'
+import CartPage from './pages/cart/CartPage'
 
 
 
@@ -21,6 +21,7 @@ const App = () => {
               <Route path='/' element={<RootLayout/>}>
               <Route index element={<Main/>} ></Route>
               <Route path={"categories"} element={<Categories/>}/>
+              <Route path={"cart"} element={<CartPage/>}/>
               </Route>
              </Route>
   ))

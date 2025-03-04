@@ -23,3 +23,21 @@
 .logo{
    width: 20%;
 }
+
+.cart{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+
+  li {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+
+    left: -1.3em;
+    top: .5em;
+
+ 
+   }
+   
+}

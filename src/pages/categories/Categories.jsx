@@ -59,18 +59,18 @@ const Categories = () => {
 
     return (
         <Container>
-            <Row className="my-5">
+            <Row className="my-5  ">
                 <Col className="category-name">
                     <h1>Select Your Favorite Dishes</h1>
                 </Col>
             </Row>
-            <Row className="my-5 list-container">
+            <Row className="my-5 list-container pe-5">
                 <Col>
                     <ul className="list-allCategory  flex-row">{listCategories}</ul>
                 </Col>
             </Row>
 
-            <Row>
+            <Row className="me-4">
                 <CardCategories favoriteFood={favoriteDish} showOneCategory={showOneCategory} />
             </Row>
         </Container>

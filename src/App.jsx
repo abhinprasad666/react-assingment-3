@@ -30,7 +30,7 @@ const App = () => {
 
    <AllDishesContext>
        <RouterProvider router={router}/>
-      <Footer/>
+      {/* <Footer/> */}
       </AllDishesContext>
   ) 
 }

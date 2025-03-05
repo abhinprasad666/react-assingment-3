@@ -37,8 +37,8 @@ const Navigationbar = () => {
           <strong>
             <Nav.Link className='me-4' href="#action3"> <img src={searchIcon} alt="" />Search Food</Nav.Link>
             </strong>
-            <div variant="outline-none login-btn bg-body-tertiary" className='me-4 categories'><Link to={'categories'}>Categories</Link> </div> 
-            <Button variant="outline-none login-btn bg-body-tertiary" className='me-3'> <img src={user} alt="" /> Login</Button>
+            <div variant="outline-none login-btn bg-body-tertiary" className='me-4 my-4 categories'><Link to={'categories'}>Categories</Link> </div> 
+            <Button variant="outline-none login-btn bg-body-tertiary" className='me-3 my-4'> <img src={user} alt="" /> Login</Button>
           
             <Link className='cart' to={"/cart"} variant="outline-none login-btn bg-body-tertiary"> <img src={cartIcon} alt="" /> <li>0</li></Link>
             

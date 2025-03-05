@@ -100,6 +100,7 @@ const Footer = () => {
 
         <Col>
         <div className='container-2'>
+               
                  <li className='follow-us'>Follow Us</li>
                  <li className='social-media'>
                     <img src={instagram} alt="" /> <img src={facebook} alt="" /> <img src={twitter} alt="" />
@@ -110,7 +111,8 @@ const Footer = () => {
                     <img src={envelopeIcon} alt="" />
                     <input type="text" placeholder='Enter Your Email' />
                     </div>
-                    <Button name={'Subscribe'}/>
+                    
+                    <Button  name={'Subscribe'}/>
                  </li>
             </div>
         </Col>

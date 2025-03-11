@@ -18,7 +18,7 @@ const filterFavDishes=allDishes?.filter((filterDishes)=>{
         }).map((dish)=>{
 
            return <Col  xs={6} sm={6} md={4}  lg={3} xl={3} xxl={3}>  <ul className="special-categories ">
-           <img className='w-100' src={dish.strMealThumb} alt="" />
+           <img onClick={()=>{s}} className='w-100' src={dish.strMealThumb} alt="" />
         
           <li>{dish.strMeal}</li>
          </ul>

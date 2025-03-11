@@ -1,8 +1,21 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import deleteIcon from '../../asset/delete.png'
+import { useDispatch } from 'react-redux'
+import { decrement, increment } from '../../redux/slices/cart'
 
-const CartCard = () => {
+
+
+const CartCard = ({cartCount}) => {
+
+
+const dispatch=useDispatch()
+
+const hello=()=>{
+  console.log("hello")
+  alert("hello")
+}
+
   return (
 <Row className='my-5 '>
   <div className="cart-box"></div>
@@ -28,9 +41,9 @@ const CartCard = () => {
      <div className='quantity-box'>
       <li>Quantity</li>
        <div className='flex-row quantity'>
-        <li className='increment'>-</li>
-        <li className='count'>0</li>
-        <li className='decrement'>+</li>
+        <li className='increment' onClick={()=>dispatch(increment())}>+</li>
+        <li className='count'>{cartCount}</li>
+        <li className='decrement' onClick={()=>dispatch(decrement())}>-</li>
        </div>
      </div>
 

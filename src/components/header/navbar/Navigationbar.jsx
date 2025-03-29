@@ -10,8 +10,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import './Navigationbar.scss'
 import { Link } from 'react-router';
 import cartIcon from '../../../asset/shopping-bag.png'
+import { useSelector } from 'react-redux';
+
 
 const Navigationbar = () => {
+
+  const {cartList}=useSelector((state)=>state.cart)
+
+  console.log("navbar carlist",cartList)
 
   return (
    
@@ -40,7 +46,7 @@ const Navigationbar = () => {
             <div variant="outline-none login-btn bg-body-tertiary" className='me-4 my-4 categories'><Link to={'categories'}>Categories</Link> </div> 
             <Button variant="outline-none login-btn bg-body-tertiary" className='me-3 my-4'> <img src={user} alt="" /> Login</Button>
           
-            <Link className='cart' to={"/cart"} variant="outline-none login-btn bg-body-tertiary"> <img src={cartIcon} alt="" /> <li>0</li></Link>
+            <Link className='cart' to={"/cart"} variant="outline-none login-btn bg-body-tertiary"> <img src={cartIcon} alt="" /> <li>{cartList.length}</li></Link>
             
         </Navbar.Collapse>
       </Container>

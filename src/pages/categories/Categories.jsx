@@ -3,12 +3,14 @@ import "./Categories.scss";
 import axios from "axios";
 import CardCategories from "./CardCategories";
 import { Container, Row, Col } from "react-bootstrap";
+import { useSelector } from "react-redux";
 
 const Categories = () => {
     const [category, setCategory] = useState([]);
     const [showOneCategory, setshowOneCategory] = useState("Beef");
     const [favoriteDish, setFavoriteDish] = useState();
     const [activatedDish, setActivatedDish] = useState("Beef");
+    
 
     // get categories
 

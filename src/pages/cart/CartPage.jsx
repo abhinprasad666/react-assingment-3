@@ -6,19 +6,19 @@ import CartCard from './CartCard'
 
 const CartPage = () => {
 
-  const {cartCount} =useSelector((state)=>state.cart)
-   console.log("your cart is :",cartCount)
+  const {cartCount,cartList} =useSelector((state)=>state.cart)
+   console.log("your cart is :",cartList)
 
   return (
 <Container className='cart-box'>
   <Row className='my-5'>
     <Col>
     <center>
-    <h1 className='text-dark '>Your Cart  {cartCount} items </h1>
+    <h1 className='text-dark '>Your Cart  {cartList.length} items </h1>
     </center>
     </Col>
   </Row>
-    <CartCard cartCount={cartCount}/>
+    <CartCard cartCount={cartCount} cartList={cartList}/>
    
 </Container>
   )

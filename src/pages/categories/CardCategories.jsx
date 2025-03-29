@@ -1,7 +1,9 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './Categories.scss'
 import { Col} from 'react-bootstrap'
 import { AllDishes } from '../../components/Context/AllDishesContext'
+import { addToCart,} from '../../redux/slices/cart'
+import { useDispatch } from 'react-redux'
 
 
 
@@ -9,6 +11,25 @@ const CardCategories = ({favoriteFood,showOneCategory}) => {
 
 
 const allDishes=useContext(AllDishes)
+const dispatch=useDispatch()
+const [addToCartBtn,setAddToCartBtn]=useState("Add To Cart")
+
+
+// add to cart button logic
+const CartHandler=(dish)=>{
+
+  dispatch(addToCart(dish))
+
+  setAddToCartBtn((pre)=>{
+    
+    if(pre=="Add To Cart"){
+      return "Adedd To Cart"
+    }else{
+      return "Add To Cart"
+    }
+  })
+}
+
 
 // filter favorite dishes
 const filterFavDishes=allDishes?.filter((filterDishes)=>{
@@ -20,7 +41,8 @@ const filterFavDishes=allDishes?.filter((filterDishes)=>{
            return <Col  xs={6} sm={6} md={4}  lg={3} xl={3} xxl={3}>  <ul className="special-categories ">
            <img onClick={()=>{s}} className='w-100' src={dish.strMealThumb} alt="" />
         
-          <li>{dish.strMeal}</li>
+          <li className='my-2' >{dish.strMeal}</li>
+         <button  onClick={()=>CartHandler(dish)}>{addToCartBtn}</button>
          </ul>
          </Col>
 

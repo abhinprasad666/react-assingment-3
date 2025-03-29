@@ -6,7 +6,7 @@ import { createRoutesFromElements } from 'react-router'
 import RootLayout from './components/layout/RootLayout'
 import Categories from './pages/categories/Categories'
 import CartPage from './pages/cart/CartPage'
-import { useState } from 'react'
+
 
 
 
@@ -14,6 +14,8 @@ import { useState } from 'react'
 
 
 const App = () => {
+
+
 
 
   //routes
@@ -33,8 +35,8 @@ const App = () => {
    <AllDishesContext>
   
        <RouterProvider router={router}/>
-      {/* <Footer/> */}
-      // </AllDishesContext>
+      <Footer/>
+       </AllDishesContext>
      
   ) 
 }

@@ -5,7 +5,9 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const  initialState={
     cartList:[],
-    cartCount:0
+    cartCount:0,
+    total:0
+
 }
 
 
@@ -15,22 +17,44 @@ const cartSlice=createSlice({
     initialState,
     reducers:{
 
-        addToCart:(state)=>{
-
-            state.cartCount=1
+        addToCart:(state,action)=>{
+            
+            state.cartList.push({...action.payload,
+                count:1
+            })
+        
         },
 
-       increment:(state)=>{
-           
-           state.cartCount+=1
+       increment:(state,action)=>{
+         
+          state.cartList=state.cartList?.forEach(item=>{
+            
+            if(item?.idMeal===action.payload){
+                item.count++
+               
+            }
+          })
+               
+     
        },
 
-       decrement:(state)=>{
-        
-          if(state.cartCount!==1){
-            state.cartCount-=1
-          }
+       decrement:(state,action)=>{
+        state.cartList=state.cartList?.forEach(item=>{
+            
+            if(item?.idMeal===action.payload){
+                item.count--
+               
+            }
+          })
       
+       },
+       deleteIteam:(state,action)=>{
+
+        state.cartList=state.cartList.filter(iteam=>{
+            if(iteam.idMeal!==action.payload){
+                return iteam
+            }
+        })
        }
 
     }
@@ -38,6 +62,6 @@ const cartSlice=createSlice({
 
 
 
-export const {addToCart,increment,decrement}=cartSlice.actions
+export const {addToCart,increment,decrement,deleteIteam}=cartSlice.actions
 
 export default cartSlice.reducer
